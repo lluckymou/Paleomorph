@@ -3,12 +3,12 @@ public class None : Fossil
     public override void OnEquip()
     {
         // Player.instance.SetHead(BodyPart);
-        // Player.Hearing += 5;
+        // Player.AquaticAffinity += 5;
     }
     
     public override void OnUnequip()
     {
-        // Player.Hearing -= 5;
+        // Player.AquaticAffinity -= 5;
     }
 
     public override void OnScoring() {}

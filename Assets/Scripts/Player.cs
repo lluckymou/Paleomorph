@@ -42,7 +42,7 @@ public class Player : SceneSingleton<Player>
         _legs.transform.localPosition = new Vector3(0, -1, 0);
     }
 
-    private static int _sight, _hearing, _weight, _damage;
+    private static int _sight, _aquaticAffinity, _weight, _damage;
 
     public static int Sight
     {
@@ -54,13 +54,13 @@ public class Player : SceneSingleton<Player>
         }
     }
 
-    public static int Hearing
+    public static int AquaticAffinity
     {
-        get => _hearing;
+        get => _aquaticAffinity;
         set
         {
-            _hearing = value;
-            PlayerStats.instance.Hearing = _hearing.ToString();
+            _aquaticAffinity = value;
+            PlayerStats.instance.AquaticAffinity = _aquaticAffinity.ToString();
         }
     }
 
@@ -86,6 +86,6 @@ public class Player : SceneSingleton<Player>
 
     void Awake()
     {
-        Sight = Hearing = Weight = Damage = 0;
+        Sight = AquaticAffinity = Weight = Damage = 0;
     }
 }

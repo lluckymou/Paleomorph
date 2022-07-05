@@ -7,8 +7,9 @@ public abstract class Fossil : MonoBehaviour
     public string Name;
     public string Description;
 
-    [Header("Fossil Sprite")]
+    [Header("Fossil Utils")]
     public Sprite Icon;
+    public GameObject Origin;
 
     [Header("Fossil Gameobjects")]
     public GameObject BodyPart;

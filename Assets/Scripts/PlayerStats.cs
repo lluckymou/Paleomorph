@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerStats : SceneSingleton<PlayerStats>
 {
-    [SerializeField] Text sight, hearing, weight, damage;
+    [SerializeField] Text sight, aqua, weight, damage;
     
     public string Sight
     {
@@ -16,12 +16,12 @@ public class PlayerStats : SceneSingleton<PlayerStats>
         }
     }
 
-    public string Hearing
+    public string AquaticAffinity
     {
-        get => hearing.text;
+        get => aqua.text;
         set
         {
-            hearing.text = value;
+            aqua.text = value;
         }
     }
 
