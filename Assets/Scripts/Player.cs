@@ -6,7 +6,7 @@ public class Player : SceneSingleton<Player>
 {
     [SerializeField] GameObject _head, _body, _legs;
 
-    public void SetHead(GameObject head)
+    public void SetTop(GameObject head)
     {
         if(_head)
         {
@@ -18,7 +18,7 @@ public class Player : SceneSingleton<Player>
         _head.transform.localPosition = new Vector3(0, 1, 0);
     }
 
-    public void SetBody(GameObject body)
+    public void SetMiddle(GameObject body)
     {
         if(_body)
         {
@@ -30,7 +30,7 @@ public class Player : SceneSingleton<Player>
         _body.transform.localPosition = new Vector3(0, 0, 0);
     }
 
-    public void SetLegs(GameObject legs)
+    public void SetBottom(GameObject legs)
     {
         if(_legs)
         {

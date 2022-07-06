@@ -9,14 +9,13 @@ public abstract class Fossil : MonoBehaviour
 
     [Header("Fossil Utils")]
     public Sprite Icon;
-    public GameObject Origin;
 
     [Header("Fossil Gameobjects")]
     public GameObject BodyPart;
 
     public void Equip(FossilEnumeration fossil = 0)
     {
-        // Checks if player has collected that fossil before to add to their collection
+        // Gets fossil enum to check if player has collected that fossil before to add to their collection
         // TODO TODO
         OnEquip();
     }

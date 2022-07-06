@@ -1,15 +1,8 @@
 public class None : Fossil
 {
-    public override void OnEquip()
-    {
-        // Player.instance.SetHead(BodyPart);
-        // Player.AquaticAffinity += 5;
-    }
+    public override void OnEquip() {}
     
-    public override void OnUnequip()
-    {
-        // Player.AquaticAffinity -= 5;
-    }
+    public override void OnUnequip() {}
 
     public override void OnScoring() {}
 

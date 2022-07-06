@@ -1,4 +1,19 @@
 public enum FossilEnumeration
 {
     None,
+    AbelisaurusBottom,
+    AbelisaurusMiddle,
+    AbelisaurusTop,
+    DesmodusBottom,
+    DesmodusMiddle,
+    DesmodusTop,
+    EremotheriumBottom,
+    EremotheriumMiddle,
+    EremotheriumTop,
+    GlyptodonBottom,
+    GlyptodonMiddle,
+    GlyptodonTop,
+    VinctiferBottom,
+    VinctiferMiddle,
+    VinctiferTop,
 }

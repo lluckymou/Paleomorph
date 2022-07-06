@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class FossilBarrier : MonoBehaviour
 {
-    [SerializeField] FossilEnumeration fossil;
+    public FossilEnumeration fossil;
+
+    void Start()
+    {
+        Transform t = FossilUtils.instance.NewRock(Fossils.GetItemFromEnumeration(fossil).Icon, transform.parent).transform;
+        t.localPosition = transform.localPosition + t.GetComponent<RockPositionDifference>().Difference;
+    }
 
     void OnTriggerEnter(Collider col)
     {

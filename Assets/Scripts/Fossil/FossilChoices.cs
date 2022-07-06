@@ -5,6 +5,16 @@ using UnityEngine;
 public class FossilChoices : MonoBehaviour
 {
     [HideInInspector] public bool active = false; 
+    public FossilEnumeration Left, Right;
+
+    public void Start()
+    {
+        FossilBarrier _left = transform.GetChild(0).gameObject.AddComponent(typeof(FossilBarrier)) as FossilBarrier;
+        FossilBarrier _right = transform.GetChild(1).gameObject.AddComponent(typeof(FossilBarrier)) as FossilBarrier;
+    
+        _left.fossil = Left;
+        _right.fossil = Right;
+    }
 
     public void DestroyChildren()
     {

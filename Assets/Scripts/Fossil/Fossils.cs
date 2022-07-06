@@ -5,37 +5,141 @@ using System.Linq;
 
 public class Fossils : SceneSingleton<Fossils>
 {
-    [Header("Special Items")]
-    [SerializeField]
-    None _none;
+    #if UNITY_EDITOR
+    [SerializeField] FossilEnumeration _fossil;
+    [SerializeField] bool give;
+
+    void Update()
+    {
+        if(give)
+        {
+            give = false;
+            Player.instance.GetComponent<ParticleSystem>().Play();
+            GetItemFromEnumeration(_fossil).Equip(_fossil);
+        }
+    }
+    #endif
+
+    [Header("Special Fossils")]
+    [SerializeField] None _none;
 
     public static None None
     {
         get => instance._none;
     }
 
-    // [Header("Items")]
-    // [SerializeField]
-    // Fireball _fireball;
+    [Header("Fossils")]
+    [SerializeField] AbelisaurusBottom _AbelisaurusBottom;
+    public static AbelisaurusBottom AbelisaurusBottom
+    {
+        get => instance._AbelisaurusBottom;
+    }
 
-    // public static Fireball Fireball
-    // {
-    //     get => instance._fireball;
-    // }
+    [SerializeField] AbelisaurusMiddle _AbelisaurusMiddle;
+    public static AbelisaurusMiddle AbelisaurusMiddle
+    {
+        get => instance._AbelisaurusMiddle;
+    }
 
-    // [SerializeField]
-    // Fireball _fireball;
+    [SerializeField] AbelisaurusTop _AbelisaurusTop;
+    public static AbelisaurusTop AbelisaurusTop
+    {
+        get => instance._AbelisaurusTop;
+    }
 
-    // public static Fireball Fireball
-    // {
-    //     get => instance._fireball;
-    // }
+    [SerializeField] DesmodusBottom _DesmodusBottom;
+    public static DesmodusBottom DesmodusBottom
+    {
+        get => instance._DesmodusBottom;
+    }
+
+    [SerializeField] DesmodusMiddle _DesmodusMiddle;
+    public static DesmodusMiddle DesmodusMiddle
+    {
+        get => instance._DesmodusMiddle;
+    }
+
+    [SerializeField] DesmodusTop _DesmodusTop;
+    public static DesmodusTop DesmodusTop
+    {
+        get => instance._DesmodusTop;
+    }
+
+    [SerializeField] EremotheriumBottom _EremotheriumBottom;
+    public static EremotheriumBottom EremotheriumBottom
+    {
+        get => instance._EremotheriumBottom;
+    }
+
+    [SerializeField] EremotheriumMiddle _EremotheriumMiddle;
+    public static EremotheriumMiddle EremotheriumMiddle
+    {
+        get => instance._EremotheriumMiddle;
+    }
+
+    [SerializeField] EremotheriumTop _EremotheriumTop;
+    public static EremotheriumTop EremotheriumTop
+    {
+        get => instance._EremotheriumTop;
+    }
+
+    [SerializeField] GlyptodonBottom _GlyptodonBottom;
+    public static GlyptodonBottom GlyptodonBottom
+    {
+        get => instance._GlyptodonBottom;
+    }
+
+    [SerializeField] GlyptodonMiddle _GlyptodonMiddle;
+    public static GlyptodonMiddle GlyptodonMiddle
+    {
+        get => instance._GlyptodonMiddle;
+    }
+
+    [SerializeField] GlyptodonTop _GlyptodonTop;
+    public static GlyptodonTop GlyptodonTop
+    {
+        get => instance._GlyptodonTop;
+    }
+
+    [SerializeField] VinctiferBottom _VinctiferBottom;
+    public static VinctiferBottom VinctiferBottom
+    {
+        get => instance._VinctiferBottom;
+    }
+
+    [SerializeField] VinctiferMiddle _VinctiferMiddle;
+    public static VinctiferMiddle VinctiferMiddle
+    {
+        get => instance._VinctiferMiddle;
+    }
+
+    [SerializeField] VinctiferTop _VinctiferTop;
+    public static VinctiferTop VinctiferTop
+    {
+        get => instance._VinctiferTop;
+    }
+
 
     static Dictionary<Fossil, FossilEnumeration> fossilIDs
     {
         get => new Dictionary<Fossil, FossilEnumeration>()
         {
             {None, FossilEnumeration.None},
+            {AbelisaurusBottom, FossilEnumeration.AbelisaurusBottom},
+            {AbelisaurusMiddle, FossilEnumeration.AbelisaurusMiddle},
+            {AbelisaurusTop, FossilEnumeration.AbelisaurusTop},
+            {DesmodusBottom, FossilEnumeration.DesmodusBottom},
+            {DesmodusMiddle, FossilEnumeration.DesmodusMiddle},
+            {DesmodusTop, FossilEnumeration.DesmodusTop},
+            {EremotheriumBottom, FossilEnumeration.EremotheriumBottom},
+            {EremotheriumMiddle, FossilEnumeration.EremotheriumMiddle},
+            {EremotheriumTop, FossilEnumeration.EremotheriumTop},
+            {GlyptodonBottom, FossilEnumeration.GlyptodonBottom},
+            {GlyptodonMiddle, FossilEnumeration.GlyptodonMiddle},
+            {GlyptodonTop, FossilEnumeration.GlyptodonTop},
+            {VinctiferBottom, FossilEnumeration.VinctiferBottom},
+            {VinctiferMiddle, FossilEnumeration.VinctiferMiddle},
+            {VinctiferTop, FossilEnumeration.VinctiferTop},
         };
     }
         
