@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class Player : SceneSingleton<Player>
 {
-    [SerializeField] GameObject _head, _body, _legs;
+    [Header("Game Objects")]
+    [SerializeField] GameObject _head;
+    [SerializeField] GameObject _body;
+    [SerializeField] GameObject _legs;
+
+    [Header("Equipped")]
+    public FossilEnumeration top;
+    public FossilEnumeration middle;
+    public FossilEnumeration bottom;
+
     public static float speed = 10;
 
     public void SetTop(GameObject head)
     {
-        if(_head)
-        {
-            _legs.GetComponent<Fossil>()?.OnUnequip();
-            Destroy(_head);
-        }
+        if(_head) Destroy(_head);
 
         _head = Instantiate(head, transform);
         _head.transform.localPosition = new Vector3(0, 1, 0);
@@ -21,11 +26,7 @@ public class Player : SceneSingleton<Player>
 
     public void SetMiddle(GameObject body)
     {
-        if(_body)
-        {
-            _legs.GetComponent<Fossil>()?.OnUnequip();
-            Destroy(_body);
-        }
+        if(_body) Destroy(_body);
 
         _body = Instantiate(body, transform);
         _body.transform.localPosition = new Vector3(0, 0, 0);
@@ -33,11 +34,7 @@ public class Player : SceneSingleton<Player>
 
     public void SetBottom(GameObject legs)
     {
-        if(_legs)
-        {
-            _legs.GetComponent<Fossil>()?.OnUnequip();
-            Destroy(_legs);
-        }
+        if(_legs) Destroy(_legs);
 
         _legs = Instantiate(legs, transform);
         _legs.transform.localPosition = new Vector3(0, -1, 0);

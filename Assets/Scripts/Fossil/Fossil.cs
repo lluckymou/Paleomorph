@@ -5,8 +5,9 @@ public abstract class Fossil : MonoBehaviour
 
     [Header("Descriptive attributes")]
     public string Name;
-    public FossilType Type;
     public string Description;
+    public FossilType Type;
+    [SerializeField] FossilEnumeration Enumeration;
 
     [Header("Fossil Utils")]
     public Sprite Icon;
@@ -22,12 +23,18 @@ public abstract class Fossil : MonoBehaviour
         switch(Type)
         {
             case FossilType.Top:
+                Fossils.GetItemFromEnumeration(Player.instance.top).OnUnequip();
+                Player.instance.top = Enumeration;
                 EquippedFossils.instance.Top.sprite = Icon;
                 break;
             case FossilType.Middle:
+                Fossils.GetItemFromEnumeration(Player.instance.middle).OnUnequip();
+                Player.instance.middle = Enumeration;
                 EquippedFossils.instance.Middle.sprite = Icon;
                 break;
             case FossilType.Bottom:
+                Fossils.GetItemFromEnumeration(Player.instance.bottom).OnUnequip();
+                Player.instance.bottom = Enumeration;
                 EquippedFossils.instance.Bottom.sprite = Icon;
                 break;
         }

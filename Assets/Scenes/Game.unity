@@ -167,6 +167,7 @@ MonoBehaviour:
   Name: Glyptodon Middle
   Type: 1
   Description: Lorem Ipsum
+  Enumeration: 11
   Icon: {fileID: 21300000, guid: 8c61d8c6ab20f284aba08f617b136035, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: e74c0b71ca508544b87786f794a35e1a,
     type: 3}
@@ -410,6 +411,7 @@ MonoBehaviour:
   Name: Glyptodon Bottom
   Type: 2
   Description: Lorem Ipsum
+  Enumeration: 10
   Icon: {fileID: 21300000, guid: 1bc5630538028ae41a09fa9c0544bd45, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: a9c16a2b1a330364cb45491e3c63363c,
     type: 3}
@@ -459,6 +461,7 @@ MonoBehaviour:
   Name: Eremotherium Middle
   Type: 1
   Description: Lorem Ipsum
+  Enumeration: 8
   Icon: {fileID: 21300000, guid: bf17dee299aad3744b003618b6298ced, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: df97e2132d1be5f49973023ad6dca097,
     type: 3}
@@ -681,6 +684,7 @@ MonoBehaviour:
   Name: Abelisaurus Bottom
   Type: 2
   Description: Lorem Ipsum
+  Enumeration: 1
   Icon: {fileID: 21300000, guid: b35cca5ac845a3c48b7799aba764a515, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: 0d0a110c1609cc7469500006f5c1e219,
     type: 3}
@@ -1428,6 +1432,7 @@ MonoBehaviour:
   Name: No Fossil
   Type: 0
   Description: Lorem Ipsum
+  Enumeration: 0
   Icon: {fileID: 0}
   BodyPart: {fileID: 1059197645216603794, guid: 03dfb81eeebbf014bb7b1512abd6f4f2,
     type: 3}
@@ -1524,6 +1529,7 @@ MonoBehaviour:
   Name: Desmodus Bottom
   Type: 2
   Description: Lorem Ipsum
+  Enumeration: 4
   Icon: {fileID: 21300000, guid: 97dd2fa8fe0dd0e4b8734fef0962ba83, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: ad6c9b2f66aba0a4b8f3985a64edda3a,
     type: 3}
@@ -1754,6 +1760,7 @@ MonoBehaviour:
   Name: Desmodus Top
   Type: 0
   Description: Lorem Ipsum
+  Enumeration: 6
   Icon: {fileID: 21300000, guid: 6e8bb6a09af3d1a4b9cfa1b54d7a417b, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: 7e472f43d7c80434f96602e7cf43499e,
     type: 3}
@@ -2096,6 +2103,7 @@ MonoBehaviour:
   Name: Eremotherium Top
   Type: 0
   Description: Lorem Ipsum
+  Enumeration: 9
   Icon: {fileID: 21300000, guid: f65c40631011a4844be2cb9f989bab90, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: 8f1fca54e83e2f54ca39ec3854dc5ab2,
     type: 3}
@@ -2507,6 +2515,7 @@ MonoBehaviour:
   Name: Vinctifer Top
   Type: 0
   Description: Lorem Ipsum
+  Enumeration: 15
   Icon: {fileID: 21300000, guid: 644101c97d3f1894dadefbc970fa3195, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: 06de97da6ccaac34db440f4f5413932e,
     type: 3}
@@ -2556,6 +2565,7 @@ MonoBehaviour:
   Name: Vinctifer Bottom
   Type: 2
   Description: Lorem Ipsum
+  Enumeration: 13
   Icon: {fileID: 21300000, guid: 8d61db7a70843524a8a4947e2244808d, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: 3f7981e526f44d34bbc19a8b70f7d173,
     type: 3}
@@ -2759,6 +2769,7 @@ MonoBehaviour:
   Name: Abelisaurus Top
   Type: 0
   Description: Lorem Ipsum
+  Enumeration: 3
   Icon: {fileID: 21300000, guid: 7a8c4b9104f00594f93e183d372c777c, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: beb8b666147d8734b867daaa2974707e,
     type: 3}
@@ -2984,6 +2995,7 @@ MonoBehaviour:
   Name: Vinctifer Middle
   Type: 1
   Description: Lorem Ipsum
+  Enumeration: 14
   Icon: {fileID: 21300000, guid: ecb4f7141297da64a991faccd0b8d9ab, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: b6e7f27a48a50db4c850855b770a7ede,
     type: 3}
@@ -3102,6 +3114,7 @@ MonoBehaviour:
   Name: Eremotherium Bottom
   Type: 2
   Description: Lorem Ipsum
+  Enumeration: 7
   Icon: {fileID: 21300000, guid: 93784f510a266ce44b4376d56a92c36f, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: acf93f5ca0c03b04294207ce8a784ca2,
     type: 3}
@@ -3241,6 +3254,7 @@ MonoBehaviour:
   Name: Desmodus Middle
   Type: 1
   Description: Lorem Ipsum
+  Enumeration: 5
   Icon: {fileID: 21300000, guid: a47d430c03d0ca24298620b501aa2f10, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: 96b7f7ea4f7af7c44b6342ba182643e4,
     type: 3}
@@ -3290,6 +3304,7 @@ MonoBehaviour:
   Name: Abelisaurus Middle
   Type: 1
   Description: Lorem Ipsum
+  Enumeration: 2
   Icon: {fileID: 21300000, guid: 8bcaf0a44891dc14c8c20f1342606340, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: e5fac4b07b796244087c1d4166c288a7,
     type: 3}
@@ -3506,6 +3521,7 @@ MonoBehaviour:
   Name: Glyptodon Top
   Type: 0
   Description: Lorem Ipsum
+  Enumeration: 12
   Icon: {fileID: 21300000, guid: 99eb52a23ffa8aa429c6f8b5b9e44229, type: 3}
   BodyPart: {fileID: 1059197645216603794, guid: b8dd87ef9f97c7b46a3ca2d935288aba,
     type: 3}
@@ -8489,3 +8505,6 @@ MonoBehaviour:
   _head: {fileID: 1104378924}
   _body: {fileID: 907884331}
   _legs: {fileID: 1343918571}
+  head: 0
+  body: 0
+  legs: 0
