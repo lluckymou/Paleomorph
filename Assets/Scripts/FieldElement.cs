@@ -8,7 +8,7 @@ public class FieldElement : MonoBehaviour
     {
         transform.Translate(new Vector3(0, 0, -Player.speed * Time.deltaTime));
         
-        if(transform.position.z < -10) 
+        if(transform.position.z < -50) 
             Destroy(this.gameObject);
     }
 }

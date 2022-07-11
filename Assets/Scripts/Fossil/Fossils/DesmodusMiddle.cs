@@ -3,12 +3,12 @@ public class DesmodusMiddle : Fossil
     public override void OnEquip()
     {
         Player.instance.SetMiddle(BodyPart);
-        // Player.AquaticAffinity += 5;
+        Player.Lightweight += 5;
     }
     
     public override void OnUnequip()
     {
-        // Player.AquaticAffinity -= 5;
+        Player.Lightweight -= 5;
     }
 
     public override void OnScoring() {}
