@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : SceneSingleton<Player>
 {
     [SerializeField] GameObject _head, _body, _legs;
+    public static float speed = 10;
 
     public void SetTop(GameObject head)
     {

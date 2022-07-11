@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    const float transaltionRate = 5;
+    const float transaltionRate = 6;
 
     void OnMouseDrag()
     {
