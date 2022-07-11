@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollisionHit : MonoBehaviour
+public class ScoreBarrier : MonoBehaviour
 {
     void OnTriggerEnter(Collider col)
     {
-        Health.Value--;
+        Score.Value++;
+        Destroy(gameObject);
     }
 }
