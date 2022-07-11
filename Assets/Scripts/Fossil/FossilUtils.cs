@@ -17,9 +17,6 @@ public class FossilUtils : SceneSingleton<FossilUtils>
         GameObject obj = Instantiate(RockPrefabs[chosenRock], parent);
         obj.GetComponent<MeshRenderer>().material = randomMaterial;
         
-        // if(Random.Range(0, 2) == 0)
-        //     obj.transform.GetChild(0).Rotate(0,0, 180);
-        
         obj.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = texture;
         obj.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.Lerp(randomMaterial.color, Color.black, .5f);
 

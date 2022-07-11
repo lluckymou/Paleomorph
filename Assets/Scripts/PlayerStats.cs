@@ -5,8 +5,22 @@ using UnityEngine.UI;
 
 public class PlayerStats : SceneSingleton<PlayerStats>
 {
-    [SerializeField] Text sight, aqua, weight, damage;
+    [SerializeField] Text rocks, sight, aqua, weight, damage;
     
+    void Awake()
+    {
+        Rocks = PlayerPrefs.GetInt("Rocks", 0).ToString();
+    }
+
+    public string Rocks
+    {
+        get => rocks.text;
+        set
+        {
+            rocks.text = value;
+        }
+    }
+
     public string Sight
     {
         get => sight.text;

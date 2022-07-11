@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class Player : SceneSingleton<Player>
 {
+    #if UNITY_EDITOR
+        public bool resetRocks;
+
+        void Update()
+        {
+            if(resetRocks)
+            {
+                resetRocks = false;
+                Inventory.Rocks = 0;
+            }
+        }
+    #endif
+
     [Header("Game Objects")]
     [SerializeField] GameObject _head;
     [SerializeField] GameObject _body;

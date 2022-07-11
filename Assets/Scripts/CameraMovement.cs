@@ -11,12 +11,15 @@ public class CameraMovement : MonoBehaviour
         float position =  Input.mousePosition.x;
         float objPosition = Camera.main.WorldToScreenPoint(transform.position).x;
         
-        transform.position = new Vector3(
-            Mathf.Clamp(
-                transform.position.x + ((position - objPosition >= 0? 1 : -1) * transaltionRate * Time.deltaTime),
-                -4.25f,
-                4.25f
-            )
-        , 0, 0);
+        if(position - objPosition >= 0) // right
+        {
+            if(transform.position.x < 4.25f)
+                transform.Translate(transaltionRate * Time.deltaTime, 0, 0);
+        }
+        else 
+        {
+            if(transform.position.x > -4.25f)
+                transform.Translate(-transaltionRate * Time.deltaTime, 0, 0);
+        }
     }
 }
