@@ -3,12 +3,14 @@ public class EremotheriumMiddle : Fossil
     public override void OnEquip()
     {
         Player.instance.SetMiddle(BodyPart);
-        // Player.AquaticAffinity += 5;
+        Player.Defense += 1;
+        Player.Lightweight -= 2;
     }
     
     public override void OnUnequip()
     {
-        // Player.AquaticAffinity -= 5;
+        Player.Defense -= 1;
+        Player.Lightweight += 2;
     }
 
     public override void OnScoring() {}

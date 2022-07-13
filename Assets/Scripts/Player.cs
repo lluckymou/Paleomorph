@@ -85,7 +85,7 @@ public class Player : SceneSingleton<Player>
         }
     }
 
-    public static int Damage
+    public static int Defense
     {
         get => _damage;
         set
@@ -97,6 +97,6 @@ public class Player : SceneSingleton<Player>
 
     void Awake()
     {
-        Sight = AquaticAffinity = Lightweight = Damage = 0;
+        Sight = AquaticAffinity = Lightweight = Defense = 0;
     }
 }

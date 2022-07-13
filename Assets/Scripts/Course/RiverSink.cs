@@ -9,7 +9,7 @@ public class RiverSink : MonoBehaviour
         if(Player.Lightweight >= 5) 
             return;
         
-        if(Player.Lightweight >= 2)
+        if(Player.Lightweight >= 3)
         {
             Player.instance.transform.Translate(0, -0.5f, 0);
             return;
@@ -28,7 +28,7 @@ public class RiverSink : MonoBehaviour
         if(Player.Lightweight >= 5) 
             return;
         
-        if(Player.Lightweight >= 2)
+        if(Player.Lightweight >= 3)
         {
             Player.instance.transform.Translate(0, 0.5f, 0);
             return;

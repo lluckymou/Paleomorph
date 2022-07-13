@@ -3,12 +3,14 @@ public class GlyptodonBottom : Fossil
     public override void OnEquip()
     {
         Player.instance.SetBottom(BodyPart);
-        // Player.AquaticAffinity += 5;
+        Player.Defense += 2;
+        Player.AquaticAffinity += 1;
     }
     
     public override void OnUnequip()
     {
-        // Player.AquaticAffinity -= 5;
+        Player.Defense -= 2;
+        Player.AquaticAffinity -= 1;
     }
 
     public override void OnScoring() {}

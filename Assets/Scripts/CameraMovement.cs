@@ -8,6 +8,8 @@ public class CameraMovement : MonoBehaviour
 
     void OnMouseDrag()
     {
+        if(Health.Value <= 0) return;
+
         float position =  Input.mousePosition.x;
         float objPosition = Camera.main.WorldToScreenPoint(transform.position).x;
         

@@ -3,12 +3,14 @@ public class DesmodusTop : Fossil
     public override void OnEquip()
     {
         Player.instance.SetTop(BodyPart);
-        // Player.AquaticAffinity += 5;
+        Player.Sight += 2;
+        Player.Lightweight += 1;
     }
     
     public override void OnUnequip()
     {
-        // Player.AquaticAffinity -= 5;
+        Player.Sight -= 2;
+        Player.Lightweight -= 1;
     }
 
     public override void OnScoring() {}

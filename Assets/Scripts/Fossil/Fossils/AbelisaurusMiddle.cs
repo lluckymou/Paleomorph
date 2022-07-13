@@ -3,12 +3,14 @@ public class AbelisaurusMiddle : Fossil
     public override void OnEquip()
     {
         Player.instance.SetMiddle(BodyPart);
-        // Player.AquaticAffinity += 5;
+        Player.Defense += 2;
+        Player.Lightweight += 1;
     }
     
     public override void OnUnequip()
     {
-        // Player.AquaticAffinity -= 5;
+        Player.Defense -= 2;
+        Player.Lightweight -= 1;
     }
 
     public override void OnScoring() {}
