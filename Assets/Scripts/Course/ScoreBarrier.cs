@@ -7,6 +7,7 @@ public class ScoreBarrier : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
         Score.Value++;
+        CourseGenerator.instance.NewElement();
         Destroy(gameObject);
     }
 }
