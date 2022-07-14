@@ -7,6 +7,12 @@ public class Darkness : MonoBehaviour
     [SerializeField] GameObject blindness;
     [SerializeField] Light sun;
 
+    void Start()
+    {
+        blindness = GameObject.Find("Canvas").transform.Find("Blindness").gameObject;
+        sun = FindObjectOfType<Light>();
+    }
+
     void OnTriggerEnter(Collider col)
     {
         if(Player.Sight < 2)

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FieldElement : MonoBehaviour
 {
+    public float size = 20;
+
     void Update()
     {
         transform.Translate(new Vector3(0, 0, -Player.speed * Time.deltaTime));

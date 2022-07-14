@@ -1301,6 +1301,9 @@ MonoBehaviour:
   - {fileID: 3049400678666463425, guid: e0ad28f892f247f4eb84d8275d7a8ac8, type: 3}
   - {fileID: 4340460031100945199, guid: 27b3ee858d87f8241b5fe7d42b7ad309, type: 3}
   - {fileID: 853389912739138904, guid: 517a83e4f03ff524b9b83d7a51b785d5, type: 3}
+  distance: 0
+  lastDistance: 0
+  subsequentRocks: 0
 --- !u!1 &468797513
 GameObject:
   m_ObjectHideFlags: 0
