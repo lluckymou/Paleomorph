@@ -6,8 +6,14 @@ public class FossilChoices : MonoBehaviour
 {
     [HideInInspector] public bool active = false; 
     public FossilEnumeration Left, Right;
+    [SerializeField] bool automatic = true;
 
     public void Start()
+    {
+        if(automatic) Generate();
+    }
+
+    public void Generate()
     {
         FossilBarrier _left = transform.GetChild(0).gameObject.AddComponent(typeof(FossilBarrier)) as FossilBarrier;
         FossilBarrier _right = transform.GetChild(1).gameObject.AddComponent(typeof(FossilBarrier)) as FossilBarrier;
