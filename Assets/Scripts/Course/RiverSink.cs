@@ -17,7 +17,7 @@ public class RiverSink : MonoBehaviour
 
         Player.instance.transform.Translate(0, -1.5f, 0);
 
-        if(Player.AquaticAffinity <= 2)
+        if(Player.AquaticAffinity < 2)
         {
             StartCoroutine(WaitFor.Frames(10, () => {Health.Value--;}));
         }
