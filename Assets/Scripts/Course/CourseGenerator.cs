@@ -11,13 +11,20 @@ public class CourseGenerator : SceneSingleton<CourseGenerator>
     [SerializeField] int subsequentRocks = 0;
     [SerializeField] Transform last;
 
+    [SerializeField] float distance = 50;
+
     void Start()
     {
-        GenerateElement(true);
+        GenerateElement(true, 0);
         GenerateElement(false);
         GenerateElement(Random.Range(0, 2) == 0);
         GenerateElement(Random.Range(0, 2) == 0);
-        GenerateElement(false);
+    }
+
+    void Update()
+    {
+        distance -= Time.deltaTime;
+        if(distance < 0) distance = 0;
     }
 
     public void NewElement()
@@ -34,8 +41,10 @@ public class CourseGenerator : SceneSingleton<CourseGenerator>
         }
     }
 
-    void GenerateElement(bool isRock)
+    void GenerateElement(bool isRock, float _distance = -1)
     {
+        if(_distance < 0) _distance = distance;
+
         int chosenElement = isRock ? Random.Range(0, RockFormations.Length) : Random.Range(0, Challenges.Length);
         FieldElement element;
 
@@ -44,7 +53,7 @@ public class CourseGenerator : SceneSingleton<CourseGenerator>
         else
             element = Instantiate(Challenges[chosenElement], new Vector3(0, 0, 500), Quaternion.identity).GetComponent<FieldElement>();
  
-        element.transform.position = last? last.position + new Vector3(0, 0, element.size) : new Vector3(0, 0, 25);
+        element.transform.position = (last? last.position + new Vector3(0, 0, element.size) : new Vector3(0, 0, 25)) + new Vector3(0, 0, _distance);
         last = element.transform;
     }
 }
