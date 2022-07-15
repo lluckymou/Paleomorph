@@ -153,4 +153,42 @@ public class Fossils : SceneSingleton<Fossils>
 
     public static Fossil GetItemFromEnumeration(FossilEnumeration fossil) =>
         fossilIDs.FirstOrDefault(i => i.Value == fossil).Key;
+
+    void Start()
+    {
+        switch(Inventory.Starter)
+        {
+            case FossilSpecies.Abelisaurus:
+                GetItemFromEnumeration(FossilEnumeration.AbelisaurusTop).Equip(FossilEnumeration.AbelisaurusTop);
+                GetItemFromEnumeration(FossilEnumeration.AbelisaurusMiddle).Equip(FossilEnumeration.AbelisaurusMiddle);
+                GetItemFromEnumeration(FossilEnumeration.AbelisaurusBottom).Equip(FossilEnumeration.AbelisaurusBottom);
+                break;
+
+            case FossilSpecies.Desmodus:
+                GetItemFromEnumeration(FossilEnumeration.DesmodusTop).Equip(FossilEnumeration.DesmodusTop);
+                GetItemFromEnumeration(FossilEnumeration.DesmodusMiddle).Equip(FossilEnumeration.DesmodusMiddle);
+                GetItemFromEnumeration(FossilEnumeration.DesmodusBottom).Equip(FossilEnumeration.DesmodusBottom);
+                break;
+
+            case FossilSpecies.Eremotherium:
+                GetItemFromEnumeration(FossilEnumeration.EremotheriumTop).Equip(FossilEnumeration.EremotheriumTop);
+                GetItemFromEnumeration(FossilEnumeration.EremotheriumMiddle).Equip(FossilEnumeration.EremotheriumMiddle);
+                GetItemFromEnumeration(FossilEnumeration.EremotheriumBottom).Equip(FossilEnumeration.EremotheriumBottom);
+                break;
+
+            case FossilSpecies.Glyptodon:
+                GetItemFromEnumeration(FossilEnumeration.GlyptodonTop).Equip(FossilEnumeration.GlyptodonTop);
+                GetItemFromEnumeration(FossilEnumeration.GlyptodonMiddle).Equip(FossilEnumeration.GlyptodonMiddle);
+                GetItemFromEnumeration(FossilEnumeration.GlyptodonBottom).Equip(FossilEnumeration.GlyptodonBottom);
+                break;
+
+            case FossilSpecies.Vinctifer:
+                GetItemFromEnumeration(FossilEnumeration.VinctiferTop).Equip(FossilEnumeration.VinctiferTop);
+                GetItemFromEnumeration(FossilEnumeration.VinctiferMiddle).Equip(FossilEnumeration.VinctiferMiddle);
+                GetItemFromEnumeration(FossilEnumeration.VinctiferBottom).Equip(FossilEnumeration.VinctiferBottom);
+                break;
+
+            default: break;
+        }
+    }
 }

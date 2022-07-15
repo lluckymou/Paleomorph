@@ -10,6 +10,7 @@ public class Inventory : Singleton<Inventory>
     static UnlockSteps glyptodon = UnlockSteps.Unloaded;
     static UnlockSteps vinctifer = UnlockSteps.Unloaded;
     static UnlockSteps eremotherium = UnlockSteps.Unloaded;
+    public static FossilSpecies Starter = FossilSpecies.Human;
 
     public const int UnlockChance = /* One in every: */ 2;
 

@@ -5,7 +5,13 @@ using UnityEngine.UI;
 
 public class PlayerStats : SceneSingleton<PlayerStats>
 {
-    [SerializeField] Text rocks, sight, aqua, weight, damage;
+    [SerializeField] Text rocks;
+
+    [Header("Used only in the game scene")]
+    [SerializeField] Text sight;
+    [SerializeField] Text aqua;
+    [SerializeField] Text weight;
+    [SerializeField] Text damage;
     
     void Awake()
     {
