@@ -11,6 +11,7 @@ public class Health : SceneSingleton<Health>
     [SerializeField] Sprite heartIcon;
     [SerializeField] Sprite halfHeartIcon;
     [SerializeField] GameObject damagePanel;
+    [SerializeField] GameObject deathPanel;
     
     int health = 2;
 
@@ -34,8 +35,9 @@ public class Health : SceneSingleton<Health>
             {
                 instance.damagePanel.SetActive(true);
                 instance.heart.gameObject.SetActive(false);
+                instance.deathPanel.SetActive(true);
                 Player.speed = 0;
-                // FAZER MORTE AQUI
+                Time.timeScale = 0.25f;
             }
         }
     }

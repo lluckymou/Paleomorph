@@ -27,7 +27,8 @@ public class Player : SceneSingleton<Player>
     public FossilEnumeration middle;
     public FossilEnumeration bottom;
 
-    public static float speed = 10;
+    const float defaultSpeed = 10;
+    public static float speed = defaultSpeed;
 
     public void SetTop(GameObject head)
     {
@@ -97,6 +98,7 @@ public class Player : SceneSingleton<Player>
 
     void Awake()
     {
+        speed = defaultSpeed;
         Sight = AquaticAffinity = Lightweight = Defense = 0;
     }
 }
