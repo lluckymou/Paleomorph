@@ -7,11 +7,11 @@ public class AbelisaurusTop : Fossil
         Player.instance.SetTop(BodyPart);
         
         Vector3 size = Player.instance.gameObject.GetComponent<BoxCollider>().size;
-        size.z = 4.5f;
+        size.z = 3.5f;
         Player.instance.gameObject.GetComponent<BoxCollider>().size = size;
         
         Player.Defense += 1;
-        Player.Lightweight += 1;
+        Player.Lightweight += 2;
     }
     
     public override void OnUnequip()
@@ -21,7 +21,7 @@ public class AbelisaurusTop : Fossil
         Player.instance.gameObject.GetComponent<BoxCollider>().size = size;
 
         Player.Defense -= 1;
-        Player.Lightweight -= 1;
+        Player.Lightweight -= 2;
     }
 
     public override void OnScoring() {}
