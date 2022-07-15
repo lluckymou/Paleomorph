@@ -12,10 +12,4 @@ public class GlyptodonBottom : Fossil
         Player.Defense -= 2;
         Player.AquaticAffinity -= 2;
     }
-
-    public override void OnScoring() {}
-
-    public override void OnDeath() {}
-
-    public override void OnCollision() {}
 }

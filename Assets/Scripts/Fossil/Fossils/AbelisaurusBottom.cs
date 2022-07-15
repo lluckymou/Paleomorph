@@ -12,10 +12,4 @@ public class AbelisaurusBottom : Fossil
         Player.Defense -= 1;
         Player.AquaticAffinity -= 1;
     }
-
-    public override void OnScoring() {}
-
-    public override void OnDeath() {}
-
-    public override void OnCollision() {}
 }

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Glyptodon Middle
   Description: Lorem Ipsum
+  Species: 4
   Type: 1
   Enumeration: 11
   Icon: {fileID: 21300000, guid: 8c61d8c6ab20f284aba08f617b136035, type: 3}
@@ -682,6 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Glyptodon Bottom
   Description: Lorem Ipsum
+  Species: 4
   Type: 2
   Enumeration: 10
   Icon: {fileID: 21300000, guid: 1bc5630538028ae41a09fa9c0544bd45, type: 3}
@@ -810,6 +812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Eremotherium Middle
   Description: Lorem Ipsum
+  Species: 3
   Type: 1
   Enumeration: 8
   Icon: {fileID: 21300000, guid: bf17dee299aad3744b003618b6298ced, type: 3}
@@ -1203,6 +1206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Abelisaurus Bottom
   Description: Lorem Ipsum
+  Species: 1
   Type: 2
   Enumeration: 1
   Icon: {fileID: 21300000, guid: b35cca5ac845a3c48b7799aba764a515, type: 3}
@@ -2346,6 +2350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: No Fossil
   Description: Lorem Ipsum
+  Species: 0
   Type: 0
   Enumeration: 0
   Icon: {fileID: 0}
@@ -2520,6 +2525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Desmodus Bottom
   Description: Lorem Ipsum
+  Species: 2
   Type: 2
   Enumeration: 4
   Icon: {fileID: 21300000, guid: 97dd2fa8fe0dd0e4b8734fef0962ba83, type: 3}
@@ -2797,6 +2803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Desmodus Top
   Description: Lorem Ipsum
+  Species: 2
   Type: 0
   Enumeration: 6
   Icon: {fileID: 21300000, guid: 6e8bb6a09af3d1a4b9cfa1b54d7a417b, type: 3}
@@ -3544,6 +3551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Eremotherium Top
   Description: Lorem Ipsum
+  Species: 3
   Type: 0
   Enumeration: 9
   Icon: {fileID: 21300000, guid: f65c40631011a4844be2cb9f989bab90, type: 3}
@@ -4188,6 +4196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Vinctifer Top
   Description: Lorem Ipsum
+  Species: 5
   Type: 0
   Enumeration: 15
   Icon: {fileID: 21300000, guid: 644101c97d3f1894dadefbc970fa3195, type: 3}
@@ -4238,6 +4247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Vinctifer Bottom
   Description: Lorem Ipsum
+  Species: 5
   Type: 2
   Enumeration: 13
   Icon: {fileID: 21300000, guid: 8d61db7a70843524a8a4947e2244808d, type: 3}
@@ -4494,6 +4504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Abelisaurus Top
   Description: Lorem Ipsum
+  Species: 1
   Type: 0
   Enumeration: 3
   Icon: {fileID: 21300000, guid: 7a8c4b9104f00594f93e183d372c777c, type: 3}
@@ -4806,6 +4817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Vinctifer Middle
   Description: Lorem Ipsum
+  Species: 5
   Type: 1
   Enumeration: 14
   Icon: {fileID: 21300000, guid: ecb4f7141297da64a991faccd0b8d9ab, type: 3}
@@ -5032,6 +5044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Eremotherium Bottom
   Description: Lorem Ipsum
+  Species: 3
   Type: 2
   Enumeration: 7
   Icon: {fileID: 21300000, guid: 93784f510a266ce44b4376d56a92c36f, type: 3}
@@ -5324,6 +5337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Desmodus Middle
   Description: Lorem Ipsum
+  Species: 2
   Type: 1
   Enumeration: 5
   Icon: {fileID: 21300000, guid: a47d430c03d0ca24298620b501aa2f10, type: 3}
@@ -5750,6 +5764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Abelisaurus Middle
   Description: Lorem Ipsum
+  Species: 1
   Type: 1
   Enumeration: 2
   Icon: {fileID: 21300000, guid: 8bcaf0a44891dc14c8c20f1342606340, type: 3}
@@ -6189,6 +6204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Glyptodon Top
   Description: Lorem Ipsum
+  Species: 4
   Type: 0
   Enumeration: 12
   Icon: {fileID: 21300000, guid: 99eb52a23ffa8aa429c6f8b5b9e44229, type: 3}

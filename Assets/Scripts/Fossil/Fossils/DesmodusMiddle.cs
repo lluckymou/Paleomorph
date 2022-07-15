@@ -10,10 +10,4 @@ public class DesmodusMiddle : Fossil
     {
         Player.Lightweight -= 2;
     }
-
-    public override void OnScoring() {}
-
-    public override void OnDeath() {}
-
-    public override void OnCollision() {}
 }

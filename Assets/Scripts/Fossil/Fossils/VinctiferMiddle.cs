@@ -12,10 +12,4 @@ public class VinctiferMiddle : Fossil
         Player.AquaticAffinity -= 1;
         Player.Lightweight -= 1;
     }
-
-    public override void OnScoring() {}
-
-    public override void OnDeath() {}
-
-    public override void OnCollision() {}
 }

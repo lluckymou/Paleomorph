@@ -23,10 +23,4 @@ public class VinctiferTop : Fossil
         Player.AquaticAffinity -= 2;
         Player.Sight += 1;
     }
-
-    public override void OnScoring() {}
-
-    public override void OnDeath() {}
-
-    public override void OnCollision() {}
 }
