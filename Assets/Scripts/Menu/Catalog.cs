@@ -296,14 +296,14 @@ public class Catalog : MonoBehaviour
         if(step == UnlockSteps.FirstFossil)
         {
             unlockButton.SetActive(true);
-            unlockButton.transform.GetChild(0).GetComponent<Text>().text = "Colete mais fósseis desta espécie para desbloqueá-la\n\n<b>nProgresso: 33%</b>";
+            unlockButton.transform.GetChild(0).GetComponent<Text>().text = "Colete mais fósseis desta espécie para desbloqueá-la\n\n<b>Progresso: 33%</b>";
             location.sprite = question;
             description.text = noDescription;
         }
         else if(step == UnlockSteps.SecondFossil)
         {
             unlockButton.SetActive(true);
-            unlockButton.transform.GetChild(0).GetComponent<Text>().text = "Colete mais fósseis desta espécie para desbloqueá-la\n\n<b>nProgresso: 66%</b>";
+            unlockButton.transform.GetChild(0).GetComponent<Text>().text = "Colete mais fósseis desta espécie para desbloqueá-la\n\n<b>Progresso: 66%</b>";
             description.text = noDescription;
         }
         else if(step == UnlockSteps.ThirdFossil)
