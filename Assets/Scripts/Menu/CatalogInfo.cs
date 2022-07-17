@@ -54,7 +54,6 @@ public class CatalogInfo : MonoBehaviour
     public Sprite GlyptodonLocation;
     public const string GlyptodonCharacteristics = @"Características:
 
-  • Mamífero;
   • 3 Metros de comprimento;
   • Grande armadura composta por grossas placas;
   • Extinto com a chegada dos humanos na América do Sul;
@@ -70,9 +69,10 @@ public class CatalogInfo : MonoBehaviour
     public Sprite VinctiferLocation;
     public const string VinctiferCharacteristics = @"Características:
 
-  • Predador;
+  • Predador de águas salobras do nordeste brasileiro;
   • Um dos peixes mais comuns 150 milhões de anos atrás;
   • Focinho fino e pontiagudo com muitos dentes pequenos;
+  • Seu corpo alongado lembra o do atual peixe Boca de Jacaré;
   • Fósseis encontrados do México à Antártica.";
     public int VinctiferPrice;
 }
