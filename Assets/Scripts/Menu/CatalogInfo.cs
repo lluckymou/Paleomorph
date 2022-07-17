@@ -9,17 +9,11 @@ public class CatalogInfo : MonoBehaviour
     public Sprite AbelisaurusSprite;
     public Sprite AbelisaurusLocation;
     public const string AbelisaurusCharacteristics = @"Características:
-
-  • 1;
-  • 2;
-  • 3;
-  • 4;
-  • 5;
-  • 6;
-  • 7;
-  • 8;
-  • 9;
-  • 10;";
+  • Um dos maiores predadores da sua época;
+  • Atacava por emboscada, em alta velocidade;
+  • 74 Milhões de anos atrás;
+  • 3 Metros de altura e 7 de comprimento;
+  • 2 Toneladas (peso de um carro grande).";
     public int AbelisaurusPrice;
 
     [Header("Desmodus")]
@@ -30,16 +24,11 @@ public class CatalogInfo : MonoBehaviour
     public Sprite DesmodusLocation;
     public const string DesmodusCharacteristics = @"Características:
 
-  • 1;
-  • 2;
-  • 3;
-  • 4;
-  • 5;
-  • 6;
-  • 7;
-  • 8;
-  • 9;
-  • 10;";
+  • Último dos grandes mamíferos voadores;
+  • Extinto por volta de 1820;
+  • 30% maior que morcegos-vampiros comuns;
+  • Maior morcego-vampiro que já existiu;
+  • Tamanho do seu corpo (envergadura) de aproximadamente meio metro.";
     public int DesmodusPrice;
 
     [Header("Eremotherium")]
@@ -50,16 +39,11 @@ public class CatalogInfo : MonoBehaviour
     public Sprite EremotheriumLocation;
     public const string EremotheriumCharacteristics = @"Características:
 
-  • 1;
-  • 2;
-  • 3;
-  • 4;
-  • 5;
-  • 6;
-  • 7;
-  • 8;
-  • 9;
-  • 10;";
+  • Conhecido como “preguiça gigante”;
+  • 5 Metros de altura;
+  • Pesava 5 toneladas;
+  • Possivelmente extinta com a chegada dos humanos na América do Sul;
+  • Um dos maiores mamíferos que já existiram.";
     public int EremotheriumPrice;
 
     [Header("Glyptodon")]
@@ -70,16 +54,12 @@ public class CatalogInfo : MonoBehaviour
     public Sprite GlyptodonLocation;
     public const string GlyptodonCharacteristics = @"Características:
 
-  • 1;
-  • 2;
-  • 3;
-  • 4;
-  • 5;
-  • 6;
-  • 7;
-  • 8;
-  • 9;
-  • 10;";
+  • Mamífero;
+  • 3 Metros de comprimento;
+  • Grande armadura composta por grossas placas;
+  • Extinto com a chegada dos humanos na América do Sul;
+  • Cauda possuía espinhos;
+  • Pesava 1 tonelada.";
     public int GlyptodonPrice;
 
     [Header("Vinctifer")]
@@ -90,15 +70,9 @@ public class CatalogInfo : MonoBehaviour
     public Sprite VinctiferLocation;
     public const string VinctiferCharacteristics = @"Características:
 
-  • 1;
-  • 2;
-  • 3;
-  • 4;
-  • 5;
-  • 6;
-  • 7;
-  • 8;
-  • 9;
-  • 10;";
+  • Predador;
+  • Um dos peixes mais comuns 150 milhões de anos atrás;
+  • Focinho fino e pontiagudo com muitos dentes pequenos;
+  • Fósseis encontrados do México à Antártica.";
     public int VinctiferPrice;
 }
