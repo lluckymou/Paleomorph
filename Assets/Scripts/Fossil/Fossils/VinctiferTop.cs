@@ -11,7 +11,7 @@ public class VinctiferTop : Fossil
         Player.instance.gameObject.GetComponent<BoxCollider>().size = size;
 
         Player.AquaticAffinity += 2;
-        Player.Sight -= 1;
+        Player.Sight -= 2;
     }
     
     public override void OnUnequip()
@@ -21,6 +21,6 @@ public class VinctiferTop : Fossil
         Player.instance.gameObject.GetComponent<BoxCollider>().size = size;
         
         Player.AquaticAffinity -= 2;
-        Player.Sight += 1;
+        Player.Sight += 2;
     }
 }

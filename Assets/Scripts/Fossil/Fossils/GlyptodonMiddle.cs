@@ -3,13 +3,13 @@ public class GlyptodonMiddle : Fossil
     public override void OnEquip()
     {
         Player.instance.SetMiddle(BodyPart);
-        Player.Defense += 1;
-        Player.Lightweight -= 1;
+        Player.Defense += 2;
+        Player.Lightweight -= 2;
     }
     
     public override void OnUnequip()
     {
-        Player.Defense -= 1;
-        Player.Lightweight += 1;
+        Player.Defense -= 2;
+        Player.Lightweight += 2;
     }
 }

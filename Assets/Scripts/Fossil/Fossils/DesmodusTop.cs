@@ -3,13 +3,13 @@ public class DesmodusTop : Fossil
     public override void OnEquip()
     {
         Player.instance.SetTop(BodyPart);
-        Player.Sight += 2;
-        Player.Lightweight += 1;
+        Player.Sight += 3;
+        Player.Lightweight += 2;
     }
     
     public override void OnUnequip()
     {
-        Player.Sight -= 2;
-        Player.Lightweight -= 1;
+        Player.Sight -= 3;
+        Player.Lightweight -= 2;
     }
 }

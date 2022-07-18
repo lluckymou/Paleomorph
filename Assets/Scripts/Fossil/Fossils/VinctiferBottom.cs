@@ -4,12 +4,12 @@ public class VinctiferBottom : Fossil
     {
         Player.instance.SetBottom(BodyPart);
         Player.AquaticAffinity += 3;
-        Player.Lightweight += 1;
+        Player.Lightweight += 2;
     }
     
     public override void OnUnequip()
     {
         Player.AquaticAffinity -= 3;
-        Player.Lightweight -= 1;
+        Player.Lightweight -= 2;
     }
 }

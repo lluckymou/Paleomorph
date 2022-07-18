@@ -10,8 +10,8 @@ public class GlyptodonTop : Fossil
         size.z = 4.5f;
         Player.instance.gameObject.GetComponent<BoxCollider>().size = size;
 
-        Player.Defense += 1;
-        Player.Sight -= 1;
+        Player.Defense += 2;
+        Player.Sight -= 2;
     }
     
     public override void OnUnequip()
@@ -20,7 +20,7 @@ public class GlyptodonTop : Fossil
         size.z = 1;
         Player.instance.gameObject.GetComponent<BoxCollider>().size = size;
         
-        Player.Defense -= 1;
-        Player.Sight += 1;
+        Player.Defense -= 2;
+        Player.Sight += 2;
     }
 }

@@ -3,13 +3,13 @@ public class EremotheriumBottom : Fossil
     public override void OnEquip()
     {
         Player.instance.SetBottom(BodyPart);
-        Player.Defense += 1;
-        Player.Lightweight -= 1;
+        Player.Defense += 2;
+        Player.Lightweight -= 2;
     }
     
     public override void OnUnequip()
     {
-        Player.Defense -= 1;
-        Player.Lightweight += 1;
+        Player.Defense -= 2;
+        Player.Lightweight += 2;
     }
 }
