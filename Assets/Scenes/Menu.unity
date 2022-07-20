@@ -4181,13 +4181,13 @@ MonoBehaviour:
   AbelisaurusSprite: {fileID: 21300000, guid: 322c444d3669d94469ed8ea9932c8350, type: 3}
   AbelisaurusLocation: {fileID: 21300000, guid: 29cb6c7ddffe0a046948ad9b179df8d5,
     type: 3}
-  AbelisaurusPrice: 100
+  AbelisaurusPrice: 110
   DesmodusName: Desmodus
   DesmodusScientificName: Desmodus draculae
   DesmodusNickname: '"Morcego Gigante"'
   DesmodusSprite: {fileID: 21300000, guid: 43886ae2cb52c174a83285a3a6c8f6ec, type: 3}
   DesmodusLocation: {fileID: 21300000, guid: 1fd354c9d8d0aad4d8c27f9a5f4847ee, type: 3}
-  DesmodusPrice: 100
+  DesmodusPrice: 160
   EremotheriumName: "Eremot\xE9rio"
   EremotheriumScientificName: Eremotherium laurillardi
   EremotheriumNickname: "\"Pregui\xE7a Gigante\""
@@ -4200,13 +4200,13 @@ MonoBehaviour:
   GlyptodonNickname: '"Tatu Gigante"'
   GlyptodonSprite: {fileID: 21300000, guid: 59a71a51cb244cb44a78ebea9d2fb0e9, type: 3}
   GlyptodonLocation: {fileID: 21300000, guid: ba774406de07aa649b53ea40c7d5a031, type: 3}
-  GlyptodonPrice: 100
+  GlyptodonPrice: 135
   VinctiferName: Vinctifer
   VinctiferScientificName: Vinctifer ferrusquiai
   VinctiferNickname: 
   VinctiferSprite: {fileID: 21300000, guid: 5a5a4d4db72b43142bc164e550f92d34, type: 3}
   VinctiferLocation: {fileID: 21300000, guid: 5f7337f88719435459077827e28e61ce, type: 3}
-  VinctiferPrice: 100
+  VinctiferPrice: 80
 --- !u!1 &1928163693
 GameObject:
   m_ObjectHideFlags: 0

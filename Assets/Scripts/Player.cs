@@ -6,6 +6,7 @@ public class Player : SceneSingleton<Player>
 {
     #if UNITY_EDITOR
         public bool resetRocks;
+        public bool resetProgress;
 
         void Update()
         {
@@ -14,8 +15,22 @@ public class Player : SceneSingleton<Player>
                 resetRocks = false;
                 Inventory.Rocks = 0;
             }
+
+            if(resetProgress)
+            {
+                resetProgress = false;
+                Inventory.Abelisaurus = UnlockSteps.Locked;
+                Inventory.Desmodus = UnlockSteps.Locked;
+                Inventory.Glyptodon = UnlockSteps.Locked;
+                Inventory.Eremotherium = UnlockSteps.Locked;
+                Inventory.Vinctifer = UnlockSteps.Locked;
+            }
         }
     #endif
+
+    [Header("Tutorial")]
+    public GameObject fossilTutorial;
+    public GameObject speciesUnlock;
 
     [Header("Game Objects")]
     [SerializeField] GameObject _head;

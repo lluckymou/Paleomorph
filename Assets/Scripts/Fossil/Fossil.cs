@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Fossil : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public abstract class Fossil : MonoBehaviour
 
     public void Equip(FossilEnumeration fossil = 0)
     {
+        bool updated = false;
         switch(Species)
         {
             case FossilSpecies.Abelisaurus:
@@ -26,11 +28,15 @@ public abstract class Fossil : MonoBehaviour
                 if(Inventory.Abelisaurus == UnlockSteps.Locked)
                 {
                     Debug.Log("Abelisaurus desbloqueado");
+                    Player.instance.speciesUnlock.transform.GetChild(0).GetComponent<Image>().sprite = FossilUtils.instance.Abelisaurus;
                     Inventory.Abelisaurus = UnlockSteps.FirstFossil;
+                    updated = true;
                 }
                 else if(Inventory.Abelisaurus != UnlockSteps.ThirdFossil && Random.Range(0, Inventory.UnlockChance) == 0)
                 {
                     Debug.Log("Progresso do Abelisaurus atualizado");
+                    Player.instance.speciesUnlock.transform.GetChild(0).GetComponent<Image>().sprite = FossilUtils.instance.Abelisaurus;
+                    updated = true;
                     Inventory.Abelisaurus++;
                 }
                 break;
@@ -41,11 +47,15 @@ public abstract class Fossil : MonoBehaviour
                 if(Inventory.Desmodus == UnlockSteps.Locked)
                 {
                     Debug.Log("Desmodus desbloqueado");
+                    Player.instance.speciesUnlock.transform.GetChild(0).GetComponent<Image>().sprite = FossilUtils.instance.Desmodus;
                     Inventory.Desmodus = UnlockSteps.FirstFossil;
+                    updated = true;
                 }
                 else if(Inventory.Desmodus != UnlockSteps.ThirdFossil && Random.Range(0, Inventory.UnlockChance) == 0)
                 {
                     Debug.Log("Progresso do Desmodus atualizado");
+                    Player.instance.speciesUnlock.transform.GetChild(0).GetComponent<Image>().sprite = FossilUtils.instance.Desmodus;
+                    updated = true;
                     Inventory.Desmodus++;
                 }
                 break;
@@ -56,11 +66,15 @@ public abstract class Fossil : MonoBehaviour
                 if(Inventory.Eremotherium == UnlockSteps.Locked)
                 {
                     Debug.Log("Eremotherium desbloqueado");
+                    Player.instance.speciesUnlock.transform.GetChild(0).GetComponent<Image>().sprite = FossilUtils.instance.Eremotherium;
                     Inventory.Eremotherium = UnlockSteps.FirstFossil;
+                    updated = true;
                 }
                 else if(Inventory.Eremotherium != UnlockSteps.ThirdFossil && Random.Range(0, Inventory.UnlockChance) == 0)
                 {
                     Debug.Log("Progresso do Eremotherium atualizado");
+                    Player.instance.speciesUnlock.transform.GetChild(0).GetComponent<Image>().sprite = FossilUtils.instance.Eremotherium;
+                    updated = true;
                     Inventory.Eremotherium++;
                 }
                 break;
@@ -71,11 +85,15 @@ public abstract class Fossil : MonoBehaviour
                 if(Inventory.Glyptodon == UnlockSteps.Locked)
                 {
                     Debug.Log("Glyptodon desbloqueado");
+                    Player.instance.speciesUnlock.transform.GetChild(0).GetComponent<Image>().sprite = FossilUtils.instance.Glyptodon;
                     Inventory.Glyptodon = UnlockSteps.FirstFossil;
+                    updated = true;
                 }
                 else if(Inventory.Glyptodon != UnlockSteps.ThirdFossil && Random.Range(0, Inventory.UnlockChance) == 0)
                 {
                     Debug.Log("Progresso do Glyptodon atualizado");
+                    Player.instance.speciesUnlock.transform.GetChild(0).GetComponent<Image>().sprite = FossilUtils.instance.Glyptodon;
+                    updated = true;
                     Inventory.Glyptodon++;
                 }
                 break;
@@ -86,11 +104,15 @@ public abstract class Fossil : MonoBehaviour
                 if(Inventory.Vinctifer == UnlockSteps.Locked)
                 {
                     Debug.Log("Vinctifer desbloqueado");
+                    Player.instance.speciesUnlock.transform.GetChild(0).GetComponent<Image>().sprite = FossilUtils.instance.Vinctifer;
                     Inventory.Vinctifer = UnlockSteps.FirstFossil;
+                    updated = true;
                 }
                 else if(Inventory.Vinctifer != UnlockSteps.ThirdFossil && Random.Range(0, Inventory.UnlockChance) == 0)
                 {
                     Debug.Log("Progresso do Vinctifer atualizado");
+                    Player.instance.speciesUnlock.transform.GetChild(0).GetComponent<Image>().sprite = FossilUtils.instance.Vinctifer;
+                    updated = true;
                     Inventory.Vinctifer++;
                 }
                 break;
@@ -98,6 +120,12 @@ public abstract class Fossil : MonoBehaviour
             default: break;
         }
         
+        if(updated)
+        {
+            Player.instance.speciesUnlock.SetActive(false);
+            StartCoroutine(WaitFor.Frames(3, () => {Player.instance.speciesUnlock.SetActive(true);}));
+        }
+
         switch(Type)
         {
             case FossilType.Top:

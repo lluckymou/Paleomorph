@@ -11,20 +11,22 @@ public class CourseGenerator : SceneSingleton<CourseGenerator>
     [SerializeField] int subsequentRocks = 0;
     [SerializeField] Transform last;
 
-    [SerializeField] float distance = 50;
+    [SerializeField] float distance = 60;
+    public float Distance 
+    {
+        get => distance;
+        set
+        {
+            if(value < 10)
+                distance = 10;
+            else distance = value;
+        }
+    }
 
     void Start()
     {
-        GenerateElement(true, 0);
-        GenerateElement(false);
         GenerateElement(Random.Range(0, 2) == 0);
         GenerateElement(Random.Range(0, 2) == 0);
-    }
-
-    void Update()
-    {
-        distance -= Time.deltaTime;
-        if(distance < 0) distance = 0;
     }
 
     public void NewElement()

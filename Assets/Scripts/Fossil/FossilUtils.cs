@@ -7,6 +7,12 @@ public class FossilUtils : SceneSingleton<FossilUtils>
     [SerializeField] GameObject[] RockPrefabs;
     [SerializeField] Material[] RockMaterials;
 
+    public Sprite Abelisaurus;
+    public Sprite Desmodus;
+    public Sprite Eremotherium;
+    public Sprite Glyptodon;
+    public Sprite Vinctifer;
+
     public GameObject NewRock(Sprite texture, Transform parent)
     {
         if(RockPrefabs.Length < 1 || RockMaterials.Length < 1) return null;

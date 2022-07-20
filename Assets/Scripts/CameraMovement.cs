@@ -7,13 +7,19 @@ public class CameraMovement : MonoBehaviour
     const float transaltionRate = 6;
     Vector2 startVector = Vector2.zero;
 
+    [SerializeField] GameObject tutorial;
+
+    void Awake() => tutorial.SetActive(true);
+
     void OnMouseDown()
     {
         startVector = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
     }
     
     void OnMouseDrag()
-    {       
+    {
+        tutorial.SetActive(false);
+
         Vector2 curScreenPoint = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 distance = startVector - curScreenPoint;
         float movement = Mathf.Clamp(distance.x/(transaltionRate*2), -transaltionRate, transaltionRate);

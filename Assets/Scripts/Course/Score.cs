@@ -14,6 +14,7 @@ public class Score : SceneSingleton<Score>
         set 
         {
             instance.score = value;
+            if(instance.score > 15) Player.speed += 0.2f; 
             instance.scoreLabel.text = value.ToString();
         }
     }

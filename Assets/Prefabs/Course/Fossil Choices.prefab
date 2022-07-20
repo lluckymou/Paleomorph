@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4146289897195512872}
   - component: {fileID: 4146289897195512873}
+  - component: {fileID: 5810981852982198620}
+  - component: {fileID: 3123963865769934956}
   m_Layer: 0
   m_Name: Fossil Choices
   m_TagString: Untagged
@@ -48,6 +50,32 @@ MonoBehaviour:
   active: 0
   Left: 0
   Right: 0
+  automatic: 1
+--- !u!65 &5810981852982198620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146289897195512875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 20}
+  m_Center: {x: 0, y: 0, z: -25}
+--- !u!114 &3123963865769934956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146289897195512875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15315baed8eb27846a1d1118bb4770dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4146289897649573149
 GameObject:
   m_ObjectHideFlags: 0
