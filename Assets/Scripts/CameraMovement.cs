@@ -5,23 +5,28 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     const float transaltionRate = 6;
+    Vector2 startVector = Vector2.zero;
 
-    void OnMouseDrag()
+    void OnMouseDown()
     {
-        if(Health.Value <= 0) return;
+        startVector = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+    }
+    
+    void OnMouseDrag()
+    {       
+        Vector2 curScreenPoint = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Vector2 distance = startVector - curScreenPoint;
+        float movement = Mathf.Clamp(distance.x/(transaltionRate*2), -transaltionRate, transaltionRate);
 
-        float position =  Input.mousePosition.x;
-        float objPosition = Camera.main.WorldToScreenPoint(Player.instance.transform.position).x;
-        
-        if(position - objPosition >= 0) // right
+        if(movement < 0) // right
         {
             if(Player.instance.transform.position.x < 4.25f)
-                Player.instance.transform.Translate(transaltionRate * Time.deltaTime, 0, 0);
+                Player.instance.transform.Translate(-movement * Time.deltaTime, 0, 0);
         }
-        else 
+        else if(movement > 0)
         {
             if(Player.instance.transform.position.x > -4.25f)
-                Player.instance.transform.Translate(-transaltionRate * Time.deltaTime, 0, 0);
+                Player.instance.transform.Translate(-movement * Time.deltaTime, 0, 0);
         }
     }
 }
