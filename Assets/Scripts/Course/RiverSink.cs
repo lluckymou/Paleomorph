@@ -5,10 +5,7 @@ using UnityEngine;
 public class RiverSink : MonoBehaviour
 {
     void OnTriggerEnter(Collider col)
-    {
-        if(Player.Lightweight >= 5) 
-            return;
-        
+    {     
         if(Player.Lightweight >= 3)
         {
             Player.instance.transform.Translate(0, -0.5f, 0);
@@ -24,10 +21,7 @@ public class RiverSink : MonoBehaviour
     }
 
     void OnTriggerExit(Collider col)
-    {
-        if(Player.Lightweight >= 5) 
-            return;
-        
+    {        
         if(Player.Lightweight >= 3)
         {
             Player.instance.transform.Translate(0, 0.5f, 0);

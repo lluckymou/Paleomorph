@@ -20,6 +20,7 @@ public class FossilBarrier : MonoBehaviour
         parent.active = true;
 
         Player.instance.GetComponent<ParticleSystem>().Play();
+        Player.instance.transformPlayer.Play();
         Fossils.GetItemFromEnumeration(fossil).Equip(fossil);
         parent.DestroyChildren();
     }

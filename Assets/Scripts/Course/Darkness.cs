@@ -21,7 +21,6 @@ public class Darkness : MonoBehaviour
             sun.intensity = 0.5f;
         }
         else sun.intensity = 0;
-
     }
 
     void OnTriggerExit(Collider col)

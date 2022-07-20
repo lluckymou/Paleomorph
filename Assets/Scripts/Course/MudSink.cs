@@ -11,6 +11,7 @@ public class MudSink : MonoBehaviour
         else return;
 
         Player.speed -= 2;
+        GetComponent<AudioSource>().Play();
 
         if(Player.Defense <= 2)
             StartCoroutine(WaitFor.Frames(10, () => {Health.Value--;}));

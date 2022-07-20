@@ -11,7 +11,7 @@ public class CourseGenerator : SceneSingleton<CourseGenerator>
     [SerializeField] int subsequentRocks = 0;
     [SerializeField] Transform last;
 
-    [SerializeField] float distance = 60;
+    float distance = 50;
     public float Distance 
     {
         get => distance;

@@ -32,6 +32,11 @@ public class Player : SceneSingleton<Player>
     public GameObject fossilTutorial;
     public GameObject speciesUnlock;
 
+    [Header("Sfx")]
+    public AudioSource hit;
+    public AudioSource collectRock;
+    public AudioSource transformPlayer;
+
     [Header("Game Objects")]
     [SerializeField] GameObject _head;
     [SerializeField] GameObject _body;
@@ -43,7 +48,15 @@ public class Player : SceneSingleton<Player>
     public FossilEnumeration bottom;
 
     const float defaultSpeed = 10;
-    public static float speed = defaultSpeed;
+    public static float _speed = defaultSpeed;
+    public static float speed
+    {
+        get => _speed;
+        set
+        {
+            _speed = value;
+        }
+    }
 
     public void SetTop(GameObject head)
     {

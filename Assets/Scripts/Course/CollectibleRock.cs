@@ -18,6 +18,7 @@ public class CollectibleRock : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
         Inventory.Rocks++;
+        Player.instance.collectRock.Play();
         Destroy(gameObject);
     }
 }

@@ -29,6 +29,7 @@ public class Health : SceneSingleton<Health>
             if(value == 1)
             {
                 instance.damagePanel.SetActive(true);
+                Player.instance.hit.Play();
                 instance.heart.sprite = instance.halfHeartIcon;
             }
             else if(value <= 0)
@@ -36,8 +37,10 @@ public class Health : SceneSingleton<Health>
                 instance.damagePanel.SetActive(true);
                 instance.heart.gameObject.SetActive(false);
                 instance.deathPanel.SetActive(true);
+                Player.instance.hit.Play();
                 Player.speed = 0;
                 Time.timeScale = 0.25f;
+                instance.StartCoroutine(WaitFor.Frames(60, () => {Camera.main.GetComponent<AudioListener>().enabled = false;}));
             }
         }
     }
